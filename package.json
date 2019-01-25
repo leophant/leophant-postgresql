@@ -1,6 +1,6 @@
 {
   "name": "leophant-postgresql",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "PostgreSQL connector for Leophant",
   "license": "MIT",
   "author": "onwd",
