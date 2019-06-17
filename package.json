@@ -26,15 +26,15 @@
     "test": "npm run test-unit",
     "test-unit": "mocha --check-leaks -R dot \"test/unit/**/*.test.js\"",
     "cover": "npm run cover-unit",
-    "cover-unit": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R dot \"test/unit/**/*.test.js\" && codecov"
+    "cover-unit": "nyc --reporter=lcovonly mocha -R dot \"test/unit/**/*.test.js\" && codecov"
   },
   "dependencies": {
-    "pg": "^7.8.0"
+    "pg": "^7.11.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "codecov": "^3.1.0",
-    "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^5.2.0"
+    "codecov": "^3.5.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   }
 }
