@@ -29,7 +29,7 @@
     "cover-unit": "nyc --reporter=lcovonly mocha -R dot \"test/unit/**/*.test.js\" && codecov"
   },
   "dependencies": {
-    "pg": "^7.11.0"
+    "pg": "^7.12.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
